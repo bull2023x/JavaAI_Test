@@ -91,13 +91,16 @@ Verify Java:
 
 ```bash
 java -version
+```
 
 
 Expected output (example):
-
+```
 java version "17.0.12"
+```
 
 Project Structure
+```
 onnx-java-clean/
 ├── README.md
 ├── app/
@@ -110,18 +113,21 @@ onnx-java-clean/
 ├── gradlew
 ├── settings.gradle
 └── gradle/
+```
 
 Setup Instructions
 Step 1️⃣ Clone or Create the Project
 
 Create a working directory:
-
+```
 mkdir onnx-java-clean
 cd onnx-java-clean
+```
 
 Step 2️⃣ Initialize a Java Application (Gradle)
+```
 gradle init --type java-application
-
+```
 
 Choose:
 
@@ -135,6 +141,7 @@ Step 3️⃣ Configure Gradle
 
 Edit app/build.gradle:
 
+```
 plugins {
     id 'application'
 }
@@ -156,30 +163,31 @@ java {
         languageVersion = JavaLanguageVersion.of(17)
     }
 }
+```
 
 Step 4️⃣ Download Model & Labels
 
 Create the models directory:
-
+```
 mkdir -p app/models
-
+```
 
 Download ResNet50 (ONNX):
-
+```
 curl -L -o app/models/resnet50.onnx \
 https://storage.googleapis.com/download.tensorflow.org/models/official/resnet/resnet50-v2-7.onnx
-
+```
 
 Download ImageNet labels:
-
+```
 curl -L -o app/models/imagenet_class_index.json \
 https://storage.googleapis.com/download.tensorflow.org/data/imagenet_class_index.json
-
+```
 
 Verify:
-
+```
 ls -lh app/models
-
+```
 Step 5️⃣ Java Source Code
 
 Create app/src/main/java/Main.java and paste the full Java implementation that:
@@ -199,13 +207,14 @@ Prints Top-5 predictions
 Running the Application
 
 From the project root:
-
+```
 ./gradlew run --args="/path/to/your/image.jpg"
-
+```
 
 Example:
-
+```
 ./gradlew run --args="/Users/yourname/Downloads/dog.jpg"
+```
 
 Benefits of This Approach
 ✅ Java-Native AI Inference
@@ -251,8 +260,7 @@ Final Notes
 If you already have Java infrastructure, you do not need Python to deploy AI.
 
 This PoC demonstrates that Java can run modern deep learning models cleanly, safely, and efficiently.
-
-
+```
 ---
 
 If you want, next I can:
@@ -262,3 +270,4 @@ If you want, next I can:
 - Help you push this to GitHub step-by-step (beginner-friendly)
 
 Just say the word 👍
+```
