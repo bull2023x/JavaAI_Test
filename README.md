@@ -1,5 +1,7 @@
 # JavaAI_Test
 
+“This project is cross-platform and runs on macOS, Windows, and Linux with Java 17 and ONNX Runtime.”
+
 # Java AI Inference PoC  
 **ONNX Runtime + ResNet50 (ImageNet)**
 
@@ -265,3 +267,14 @@ You may adapt and reuse it freely.
 Final Notes
 
 If you already have Java infrastructure, you do not need Python to deploy AI.
+---------
+### Model Download (Windows)
+
+If `curl` is not available, download the files manually:
+
+- https://storage.googleapis.com/download.tensorflow.org/models/resnet50_v1.onnx
+- https://storage.googleapis.com/download.tensorflow.org/data/imagenet_class_index.json
+
+Save them into:
+
+
