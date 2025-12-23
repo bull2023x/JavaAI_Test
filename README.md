@@ -79,7 +79,14 @@ This is especially useful for:
 
 No Python runtime is required.
 
----
+## Getting the Source Code
+
+Clone this repository from GitHub:
+
+```bash
+git clone https://github.com/bull2023x/JavaAI_Test.git
+cd JavaAI_Test---
+```
 
 ## Prerequisites
 
