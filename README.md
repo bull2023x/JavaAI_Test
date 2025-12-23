@@ -258,16 +258,3 @@ You may adapt and reuse it freely.
 Final Notes
 
 If you already have Java infrastructure, you do not need Python to deploy AI.
-
-This PoC demonstrates that Java can run modern deep learning models cleanly, safely, and efficiently.
-```
----
-
-If you want, next I can:
-- Review this README for **GitHub polish**
-- Add a **short repository description**
-- Suggest a **license (MIT / Apache 2.0)**
-- Help you push this to GitHub step-by-step (beginner-friendly)
-
-Just say the word 👍
-```
